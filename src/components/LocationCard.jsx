@@ -1,14 +1,13 @@
-// components/LocationCard.jsx
 import { Box, Typography } from '@mui/material';
 
-const LocationCard = ({ location, description, date, price, rating, imageUrl, imageAlt, onClick}) => (
+const LocationCard = ({ location,hotelName, description, date, price, rating, imageUrl, imageAlt, onClick}) => (
     <Box className="flex flex-col text-sm" onClick={onClick}>
         <img src={imageUrl} alt={imageAlt} className="w-full rounded-xl h-[250px]" />
         <Box className="flex gap-5 justify-between mt-4 w-full">
             <Box className="flex flex-col">
                 <Box className="flex flex-col text-zinc-600">
-                    <Typography variant="h6" className="font-[590] text-neutral-800">{location}</Typography>
-                    <Typography variant="body2" className="mt-1">{description}</Typography>
+                    <Typography variant="h6" className="font-[590] text-neutral-800">{hotelName}</Typography>
+                    <Typography variant="body2" className="mt-1">{location}</Typography>
                 </Box>
                 <Typography variant="body2" className="justify-center mt-2 text-neutral-800">
                     <span className="font-[590] text-neutral-800">{price}</span>

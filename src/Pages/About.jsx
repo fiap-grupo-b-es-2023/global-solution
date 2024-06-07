@@ -64,7 +64,7 @@ const About = () => {
 
     return (
         <>
-            <div className="flex items-center flex-col p-20">
+            <div className="flex items-center flex-col  max-w-7xl mx-12 p-20">
                 <p className="text-xl p-6">
                     O problema de poluição nos mares brasileiros é um desafio ambiental grave e crescente. De acordo com um estudo da Oceana, 
                     o Brasil é responsável por pelo menos <span className="font-black">325 mil toneladas de lixo plástico</span> que são levadas ao mar todos os anos. Isso ocorre 
